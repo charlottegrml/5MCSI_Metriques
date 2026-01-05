@@ -24,7 +24,7 @@ function drawChart(data) {
   let table = [['Minute', 'Nombre de commits']];
 
   for (let minute in data) {
-    table.push([minute, data[minute]]);
+    table.push([parseInt(minute), data[minute]]);
   }
 
   let dataTable = google.visualization.arrayToDataTable(table);
